@@ -1,4 +1,4 @@
-from auxiliary import entitular
+import auxiliary
 
 class Personagem:
     def __init__(self, nome, vida, mana, str, con, dex, int, fth, lck, exp, nivel, reis):
@@ -31,6 +31,6 @@ class Personagem:
             f"Nível: {self.nivel}\n\n" \
             f"Reis: {self.reis}" \
 
-        entrada = entitular(self.nome, desc, ["Voltar"])
+        entrada = auxiliary.entitular(self.nome, desc, ["Voltar"])
         if entrada == 1:
             return
